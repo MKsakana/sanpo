@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>無題ドキュメント</title>
+	
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
+<link href="css/costom.css" rel="stylesheet">
+</head>
+<body>
+
+	<header class="pure-g header">
+  <div class="pure-u-1-4" >
+    <img src="img/rogo.png" alt="タイトルロゴ" class="rogo">
+  </div>
+	  <div class="pure-u-3-4 button-area">
+		<a href="info.html" class="pure-button info"><b>i</b></a>
+		</div>
+</header>
+<section class="hero">
+  <div class="bgimg">
+	  <div class="blob1"></div>
+	 <div class="blob1 blob2"></div>
+	  <div class="is-center">
+   		<img src="img/copy.png"　alt="なんとなくが今日を変える……かも？" class="copy">
+  		</div>
+	</div>
+	
+  
+</section>
+<div class="is-center">
+	<nav class="pure-g nav-bar" style="font-weight: 600;">
+	  <div class="pure-u-1-4 menu"><a href="#about">推進室について</a></div>
+	  <div class="pure-u-1-4 menu"><a href="#staff">スタッフ</a></div>
+	  <div class="pure-u-1-4 menu"><a href="#gallery">さんぽログ</a>
+		</div>
+	  <div class="pure-u-1-4 menu"><a href="#file">資料請求</a></div>
+	</nav>
+	<div class="pure-g main">
+		
+			<img src="img/inu.png"　alt="空と雲" class="pure-u-1 pure-u-sm-1-2 home-img pure-img-responsive">
+		<section class="about pure-u-1 pure-u-sm-1-2 " id="about">
+		  <h3 class="text">散策広報課　さんぽ推進室</h3>
+		  <p class="text">
+			たまに開いているお店。<br>
+			いつも通る小道。<br>
+			一期一会の雲と空。
+		  </p>
+		<p class="text">
+			気付きを重ねるうちに、それは意外な宝物になるかも。
+			</p>
+			<p class="text">
+			あなたの生活と運動習慣をよりよいものに。<br>
+			推進室はこれからも「さんぽ」をご提案していきます。
+			</p>
+		</section>
+		</div>
+	<section>
+	<h3 id="staff">スタッフ</h3>
+		<div class="prf">
+			<div class="prftext">
+			<h4>持田あさひ</h4>
+				<p>取材担当。<br>
+				今欲しいものは一眼レフ。</p>
+			</div>
+			<div class="mochita">
+		<img src="img/mochita.png" alt="持田あさひ" class="mochitaimg"></div>
+		</div>
+	<div class="prf">
+			<div class="momozaki">
+		<img src="img/momozaki.png" alt="百崎あやこ" class="momozakiimg"></div>
+		<div class="prftext2">
+			<h4>百崎あやこ</h4>
+				<p>広報担当。<br>
+				目玉焼きはしょうゆ派。</p>
+			</div>
+		</div>
+	</section>
+	<section class="log">
+		<h3 class="name"  id="gallery">さんぽログ</h3>
+	<div class="gallery">
+    <img src="img/nazo.png" alt="水門" class="photo" onclick="openPopup('popup1')">
+    <img src="img/tori.png" alt="とりの写真" class="photo" onclick="openPopup('popup2')">
+    <img src="img/umi.png" alt="海の写真" class="photo" onclick="openPopup('popup3')">
+	<img src="img/coffee.png" alt="コーヒーの写真" class="photo" onclick="openPopup('popup4')">
+	<img src="img/5second.png" alt="通天閣内部" class="photo" onclick="openPopup('popup5')">
+	<img src="img/hukuoka.png" alt="太宰府天満宮" class="photo" onclick="openPopup('popup6')">
+	<img src="img/tonel.png" alt="高架下" class="photo" onclick="openPopup('popup7')">
+	<img src="img/taga.png" alt="古民家カフェ" class="photo" onclick="openPopup('popup8')">
+	<img src="img/apart.png" alt="アパート" class="photo" onclick="openPopup('popup9')">
+	<img src="img/hokora.png" alt="祠" class="photo" onclick="openPopup('popup10')">
+	<img src="img/99hama.png" alt="海" class="photo" onclick="openPopup('popup11')">
+	<img src="img/inu.png" alt="雲" class="photo" onclick="openPopup('popup12')">
+  </div>
+
+  <!-- popup 1 -->
+  <div id="popup1" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup1')">&times;</span>
+      <div class="popup-card">
+        <div class="popup-image" style="background-image: url('img/nazo.png');"></div>
+        <div class="popup-text">
+          <h2>水門</h2>
+          <p>茨城<br>
+spring</p>
+          <p class="text">川沿いにあった水門。<br>入ってみたい。
+</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- popup 2 -->
+  <div id="popup2" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup2')">&times;</span>
+      <div class="popup-card">
+        <div class="popup-image" style="background-image: url('img/tori.png');"></div>
+        <div class="popup-text">
+          <h2>鳥</h2>
+          <p>茨城<br>
+summer</p>
+         <p class="text">カモかも？</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- popup 3 -->
+  <div id="popup3" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup3')">&times;</span>
+      <div class="popup-card">
+        <div class="popup-image" style="background-image: url('img/umi.png');"></div>
+        <div class="popup-text">
+          <h2>海</h2>
+          <p>和歌山<br>
+summer</p>
+          <p class="text">めっちゃ海日和。<br>
+懐かしいような気がする。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+		
+ <!-- popup 4 -->
+  <div id="popup4" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup4')">&times;</span>
+      <div class="popup-card">
+        <div class="popup-image" style="background-image: url('img/coffee.png');"></div>
+        <div class="popup-text">
+          <h2>カフェラテ</h2>
+          <p>茨城<br>
+autumn</p>
+         <p class="text">おいしいカフェを見つけるとうれしい。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+ <!-- popup 5 -->
+  <div id="popup5" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup5')">&times;</span>
+      <div class="popup-card">
+        <div class="popup-image" style="background-image: url('img/5second.png');"></div>
+        <div class="popup-text">
+          <h2>通天閣の展望台</h2>
+          <p>大阪<br>
+winter</p>
+          <p class="text">試せばよかった。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+		
+<!-- popup 6 -->
+  <div id="popup6" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup6')">&times;</span>
+      <div class="popup-card">
+        <div class="popup-image" style="background-image: url('img/hukuoka.png');"></div>
+        <div class="popup-text">
+          <h2>太宰府天満宮</h2>
+          <p>福岡<br>
+winter</p>
+          <p class="text">御利益があるといいな。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- popup 7 -->
+  <div id="popup7" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup7')">&times;</span>
+      <div class="popup-card">
+        <div class="popup-image" style="background-image: url('img/tonel.png');"></div>
+        <div class="popup-text">
+          <h2>高架下</h2>
+          <p>茨城<br>
+spring</p>
+          <p class="text">
+リミナルスペース感。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- popup 8 -->
+  <div id="popup8" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup8')">&times;</span>
+      <div class="popup-card">
+        <div class="popup-image" style="background-image: url('img/taga.png');"></div>
+        <div class="popup-text">
+          <h2>古民家カフェ</h2>
+          <p>茨城<br>summer</p>
+         <p class="text">リノベ古民家カフェ。<br>
+			オレンジケーキと<br>
+			瓶ラムネを食べました。<br>おいしい！</p>
+        </div>
+      </div>
+    </div>
+  </div>
+		
+<!-- popup 9 -->
+  <div id="popup9" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup9')">&times;</span>
+      <div class="popup-card">
+        <div class="popup-image" style="background-image: url('img/apart.png');"></div>
+        <div class="popup-text">
+          <h2>アパート</h2>
+          <p>大阪<br>summer</p>
+         <p class="text">何人住めるんだろう…？</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- popup 10-->
+  <div id="popup10" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup10')">&times;</span>
+      <div class="popup-card">
+        <div class="popup-image" style="background-image: url('img/hokora.png');"></div>
+        <div class="popup-text">
+          <h2>祠</h2>
+          <p>茨城<br>spring</p>
+         <p class="text">住宅街で見つけた祠。<br>
+ココだけ別世界みたい。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- popup 11-->
+  <div id="popup11" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup11')">&times;</span>
+      <div class="popup-card">
+        <div class="popup-image" style="background-image: url('img/99hama.png');"></div>
+        <div class="popup-text">
+          <h2>九十九里浜</h2>
+          <p>千葉<br>spring</p>
+         <p class="text">
+マジでずーっと<br>どこまで見ても海。<br>
+犬もさんぽしていた。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+		
+<!-- popup 11-->
+  <div id="popup12" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup12')">&times;</span>
+      <div class="popup-card">
+        <div class="popup-image" style="background-image: url('img/inu.png');"></div>
+        <div class="popup-text">
+          <h2>雲</h2>
+          <p>茨城<br>summer</p>
+         <p class="text">犬っぽい雲。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+	</section>
+	<section>
+	<h3 id="file">資料請求</h3>
+		<p>広報誌「Around」11月号</p>
+		<p>画像をクリックすると<br>
+		折本のpngファイルがダウンロードできます<br>
+		（準備中）</p>
+		<img src="img/hyoushi.png" alt="折本の表紙" class="shiryou">
+	</section>
+	<section class="concept">
+	   <p class="tategaki pure-u-sm-1-5">
+		 思い通りに　歩いてみよう。
+		</p>
+	  <div class="pure-u-1 pure-u-sm-4-5">
+		 <video width="300" height="180" autoplay muted loop class="video"> <source src="img/video.mp4" type="video/mp4"></video>
+		  </div>
+	</section>
+	</div>
+	
+	<script src="js/mordal.js"></script>
+</body>
+</html>
