@@ -321,22 +321,24 @@ a:active {
 
 h2{
 	color:#747887;
-	font-size:20px;
+	font-size:22px;
   font-weight: 600;
 }
 h3{
 	color:#747887;
-	font-size: 20px
+	font-size: 22px
 }
 h4{
 	color:#38607B;
+	font-size: 18px;
+	padding:0 5px 0 5px;
 }
 p{
     margin-top: 30px;
     margin-right: 0px;
     margin-left: 0px;
     margin-bottom: 30px;
-		font-size:15px;
+		font-size:16px;
 }
 
 .pure-g, 
@@ -476,12 +478,12 @@ p{
 
 
 .mochitaimg {
-max-width: 130px;
+max-width: 140px;
   width: auto;          /* ←縦に合わせて横は自動調整 */
   object-fit:contain;  /* ←画像の縦横比を保つ */
   display: block;       /* ←下にできる謎の余白防止 */
 margin-left:0;
- max-height: 500px;
+ max-height: 520px;
 }
 
 
@@ -539,12 +541,15 @@ margin-left:0;
 
 .shiryou{
 	max-width: 400px;
-	width: 40%;
+	width: 30%;
 	height: auto;
 	position: relative;
 	padding-bottom: 40px;
 }
 
+.yohaku{
+	margin-top:64px; 
+}
 
 
 /*ほにょほにょ円*/
@@ -627,7 +632,7 @@ position: absolute;
   background-size: cover;     /* ←全体を収める */
   background-repeat: no-repeat;
   background-position: center;  /* ←中央に寄せる */
-  background-color: #9be8ff;    /* ←画像が足りないときの背景 */
+  background-color: #9be8ff;    
   flex: 5;
   height: 100%;
 }
@@ -658,9 +663,10 @@ position: absolute;
   gap: 4px;
   margin: 40px auto;
   max-width: 1000px;
-  width: 75%; /* ←忘れがちポイント */
+  width: 75%; 
   grid-template-columns: repeat(4, 1fr); /* 4列固定 */
 }
+
 .gallery img:hover {
   transform: scale(1.05);
 }
