@@ -551,6 +551,19 @@ margin-left:0;
 	margin-top:64px; 
 }
 
+dt{
+clear:both;
+color:#7eb774;
+float:left;
+font-weight:700;
+margin:0 0 5px;
+width:12em
+}
+dd{
+border-bottom:1px solid;
+margin:0 15% 15px 20%
+}
+
 
 /*ほにょほにょ円*/
 .blob1 {
@@ -558,11 +571,11 @@ position: absolute;
   top: -10%;  /* 配置したい位置をここで調整 */
   left: 60%;
   transform: translate(-50%, -50%);
-  max-width: 300px;
-  min-width: 170px;
-  width: 30%;
+  max-width: 330px;
+  min-width: 190px;
+  width: 34%;
   height: 200px;
-  background: #FAB18F;
+  background: #FFAA83;
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   animation: blobMorph 8s ease-in-out infinite;
   z-index: 2;
@@ -570,11 +583,11 @@ position: absolute;
 .blob2{
 	 top: 80%;  /* 配置したい位置をここで調整 */
   left: 16%;
-	max-width: 230px;
+	max-width: 260px;
 	min-width: 130px;
- width: 20%;
+ width: 24%;
   height: 170px;
-  background: #91a5f7;
+  background: #79AAFF;
 	animation-delay: 1s;
 }
 
