@@ -3,6 +3,11 @@
   font-weight: 400;
   font-style: normal;
 }
+.zen-kaku-gothic-new-regular {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 /**
  * Extra rules that Pure adds on top of Normalize.css
  */
@@ -11,7 +16,9 @@ html {
     font-family:"Zen Maru Gothic", sans-serif;
 }
 body{
-	font-family:"Zen Maru Gothic", sans-serif !important;
+	 font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 400;
+  font-style: normal !important;
 }
 * {
     -webkit-box-sizing: border-box;
@@ -314,19 +321,30 @@ a {
 a:hover,
 a:focus,
 a:active {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: #34495e;
 }
 
 
 h2{
-	color:#747887;
-	font-size:22px;
-  font-weight: 600;
+    color: #747887;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    border-bottom: thin solid darkgray;
+    padding-bottom: 20px;
+    width: 180px;
 }
 h3{
-	color:#747887;
-	font-size: 22px
+	margin: 0 auto;
+    color: #747887;
+    font-size: 22px;
+    border-bottom: thin solid darkgray;
+	padding-bottom: 20px;
+	width: 200px;
 }
 h4{
 	color:#38607B;
@@ -347,7 +365,7 @@ p{
 }
 
 .pure-button{
-	background-color: #ADC6C6;
+	background-color: #19B4AA;
 }
 
 .text{
@@ -380,8 +398,8 @@ p{
     background-image: url(../img/eyecatch.png);
 	background-size:cover;
     width: auto;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 	background-repeat: no-repeat;
   background-position: center;
 	
@@ -391,6 +409,7 @@ p{
 	color:aliceblue;
 	 padding: 40px 0px 40px 0px;
     background-color: #19B4AA;
+
 }
 
 .home-img{
@@ -414,23 +433,46 @@ p{
   overflow: hidden;
 }
 .about{
-	padding:10px 20px 10px 20px;
+	padding:10px 20px 20px 20px;
 	text-align: center;
 }
 .copy{
+	position: relative;
 	max-width: 800px;
-	width:80%;
-	top:50%;
+	width:90%;
+	top:60%;
 	text-align: center;
+	z-index: 100;
 }
-
+.icons{
+	padding-bottom: 20px;
+	margin-top: 0px;
+}
+.icon{
+	width: 250px;
+	height: auto;
+	position: relative;
+	margin-top:30px;
+	margin-bottom: 0;
+	padding: 0;
+	
+}
+.icontext{
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 30px;
+	text-align: center;
+	
+}
 .concept{
-	background-color:#E8EDED;
+	background-color:#E4F3F2;
 	padding: 50px;
+	padding-bottom: 70px;
 	display: flex;
-  justify-content: flex-end; /* ← 中身を右に寄せる */
-  align-items: center;       /* ← 縦方向の位置も調整可 */
+  justify-content: flex-end;
+  align-items: center;      
 	margin-top: 50px;
+
 }
 .tategaki {
  writing-mode: vertical-rl;
@@ -449,8 +491,8 @@ p{
 	
 }
 .prf {
-    display: flex;          /* ←ここをflexにする！ */
-    justify-content: space-between; /* ←左右にきれいに分ける */
+    display: flex;      
+    justify-content: space-between; 
     width: 80%;
     margin-right: auto;
     margin-left: auto;
@@ -470,17 +512,17 @@ p{
 
 .mochita {   
    flex: 1;    
-  justify-content: flex-start; /* ←左寄せ（中央にしたければ center） */
-  align-items: center;  /* ←縦方向を中央揃え */
+  justify-content: flex-start;
+  align-items: center; 
  object-fit: contain;
 }
 
 
 .mochitaimg {
 max-width: 140px;
-  width: auto;          /* ←縦に合わせて横は自動調整 */
-  object-fit:contain;  /* ←画像の縦横比を保つ */
-  display: block;       /* ←下にできる謎の余白防止 */
+  width: auto;        
+  object-fit:contain; 
+  display: block;     
 margin-left:0;
  max-height: 520px;
 }
@@ -532,7 +574,7 @@ margin-left:0;
 .log{
 	margin-top: 20px;
 	margin-bottom: 40px;
-	background-color:#E8EDED;
+	background-color:#E4F3F2;
 	padding: 10px;
 	padding-bottom: 70px;
   align-items: center;       /* ← 縦方向の位置も調整可 */
@@ -554,42 +596,42 @@ margin-left:0;
 
 dt{
 clear:both;
-color:#7eb774;
+color:#24A89F;
 float:left;
 font-weight:700;
-margin:0 0 20px 30px;
-width:12em
-}
+margin:0 0 20px 8%;
+width:12em}
 dd{
 border-bottom:1px solid;
-margin:0 17% 15px 25%
+margin:0 17% 15px 25%;
+color:#235F5F;
 }
 
 
 /*ほにょほにょ円*/
 .blob1 {
 position: absolute;
-  top: -10%;  /* 配置したい位置をここで調整 */
-  left: 60%;
+  top: -20%;  /* 配置したい位置をここで調整 */
+  left: 65%;
   transform: translate(-50%, -50%);
-  max-width: 330px;
-  min-width: 190px;
-  width: 34%;
-  height: 200px;
+  max-width: 800px;
+  min-width: 300px;
+  width: 50%;
+  height: 65%;
   background: #FFAA83;
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   animation: blobMorph 8s ease-in-out infinite;
   z-index: 2;
 }
 .blob2{
-	 top: 80%;  /* 配置したい位置をここで調整 */
-  left: 16%;
-	max-width: 260px;
-	min-width: 130px;
- width: 24%;
-  height: 170px;
+	 top: 60%;  /* 配置したい位置をここで調整 */
+  left: -20%;
+ max-width: 800px;
+  min-width: 300px;
+  width: 60%;
+  height: 70%;
   background: #79AAFF;
-	animation-delay: 1s;
+	animation-delay: -1s;
 }
 
 @keyframes blobMorph {
@@ -687,4 +729,82 @@ position: absolute;
 
 .tab{
 	font-size: 19px;
+}
+.foot{
+	text-align: right;
+	padding: 5px 10px 5px;
+	background: #2A505D;
+	color:#FFFFFF;
+	font-size:12px;
+}
+
+#loading {
+  position: fixed;
+  z-index: 9999;
+  background: #76c7c8;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column; /* ←縦方向に並べる */
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#loading p {
+  margin-top: 20px; /* アニメーションとの間隔 */
+  font-size: 18px;
+  color: #fff;
+  letter-spacing: 1px;
+  text-align: center;}
+
+.dot-flower {
+  position: relative;
+  width: 60px; height: 60px;
+  animation: spin 1.2s linear infinite;
+}
+.dot {
+  position: absolute;
+  width: 14px; height: 14px;
+  border-radius: 50%;
+  background: #ffffff;
+  top: 23px; left: 23px;
+  opacity: 0.9;
+}
+.dot1 { transform: rotate(0deg)   translateY(-22px);}
+.dot2 { transform: rotate(60deg)  translateY(-22px);}
+.dot3 { transform: rotate(120deg) translateY(-22px);}
+.dot4 { transform: rotate(180deg) translateY(-22px);}
+.dot5 { transform: rotate(240deg) translateY(-22px);}
+.dot6 { transform: rotate(300deg) translateY(-22px);}
+@keyframes spin {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
+}
+#loading {
+  transition: opacity 0.5s ease;
+}
+
+.news {
+	background-color:#E4F3F2;
+	color:currentColor;
+	padding-top: 70px;
+	padding-bottom: 60px;
+	
+}
+.news h3{
+color:#3E6D78;
+border-bottom-color: #3E6D78;
+}
+
+.log h3{
+color:#3E6D78;
+border-bottom-color: #3E6D78;
+}
+.sample{
+	width: 480px;
+	height: auto;
+	position: relative;
 }
