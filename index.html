@@ -4,12 +4,26 @@
 <meta charset="utf-8">
 <title>散策広報課　さんぽ推進室</title>
 	
-<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
 <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
 <link href="css/costom.css" rel="stylesheet">
 </head>
 <body>
+  <div id="loading">
+  <div class="dot-flower">
+    <div class="dot dot1"></div>
+    <div class="dot dot2"></div>
+    <div class="dot dot3"></div>
+    <div class="dot dot4"></div>
+    <div class="dot dot5"></div>
+    <div class="dot dot6"></div>
+  </div>
+  <p>Please wait...</p>
+</div>
 
 	<header class="pure-g header">
   <div class="pure-u-1-4" >
@@ -24,7 +38,7 @@
 	  <div class="blob1"></div>
 	 <div class="blob1 blob2"></div>
 	  <div class="is-center">
-   		<img src="img/copy.png"　alt="なんとなくが今日を変える……かも？" class="copy">
+   		<img src="img/copy.png" alt="キャッチコピー" class="copy">
   		</div>
 	</div>
 	
@@ -42,29 +56,47 @@
 		
 			<img src="img/inu.png"　alt="空と雲" class="pure-u-1 pure-u-md-1-2 home-img pure-img-responsive">
 		<section class="about pure-u-1 pure-u-md-1-2" id="about">
-		  <h3 class="text">散策広報課　さんぽ推進室</h3>
+		  <h3 class="text" style="width: auto; padding: 15px">散策広報課　さんぽ推進室</h3>
 		  <p class="text">
-			たまに開いているお店。<br>
-			いつも通る小道。<br>
-			一期一会の雲と空。
+			たまに開いているお店、<br>
+			いつも見逃す小道、<br>
+			一期一会の雲と空…
 		  </p>
 		<p class="text">
-			気付きを重ねるうちに、それは意外な宝物になるかも。
+			無意味な回り道も、いつか意外な宝物になるかも。
 			</p>
 			<p class="text">
 			あなたの生活と運動習慣をよりよいものに。<br>
-			推進室はこれからも「さんぽ」をご提案していきます。
+			私たちはこれからも「さんぽ」をご提案していきます。
 			</p>
 		</section>
 		</div>
 	
-<section class="is-center pure-group">
-<h3>NEWS</h3>
-<dl class="yohaku　pure-u-1  pure-u-lg-2-3">
+<section  class="icons pure-group">
+	<div class="pure-u-1 pure-u-lg-1-4">
+		<img src="img/3.png" class="icon">
+		<p class="icontext">リラックスして一歩ずつ</p>
+	</div>
+	<div class="pure-u-1 pure-u-lg-1-4">
+		<img src="img/2.png" class="icon">
+		<p class="icontext">ひとりでも、みんなでも</p>
+	</div>
+	<div class="pure-u-1 pure-u-lg-1-4">
+		<img src="img/1.png" class="icon">
+	<p class="icontext">行きたい場所を見つけよう</p>
+	</div>
+</section>
+	
+	<div class="yohaku"></div>
+	
+<section class="is-center pure-group news">
+<h3>最新情報</h3>
+	
+<dl class="yohaku pure-u-1 pure-u-lg-2-3">
 <dt>【イベント】<br>
 2025.10.31</dt>
-<dd>とびだせハロウィン！<br>
-仮装ウォーキング大会に出展しました</dd>
+<dd>『とびだせハロウィン！<br>
+仮装ウォーキングデイ』に出展しました</dd>
 <dt>【ごあんない】<br>
 2025.10.15</dt>
 <dd><br>
@@ -81,9 +113,9 @@ webサイトメンテナンスについて</dd>
 	<h3 id="staff">スタッフ</h3>
 		<div class="prf">
 			<div class="prftext">
-			<h4>持田あさひ</h4>
+			<h4>持田</h4>
 				<p>取材担当。<br>
-				珈琲をグランドサイズで注文する。</p>
+				ラテをグランドサイズで注文しがち。</p>
 			</div>
 			<div class="mochita">
 		<img src="img/mochita.png" alt="持田あさひ" class="mochitaimg"></div>
@@ -92,7 +124,7 @@ webサイトメンテナンスについて</dd>
 			<div class="momozaki">
 		<img src="img/momozaki.png" alt="百崎あやこ" class="momozakiimg"></div>
 		<div class="prftext2">
-			<h4>百崎あやこ</h4>
+			<h4>百崎</h4>
 				<p>広報担当。<br>
 				目玉焼きはしょうゆ派。</p>
 			</div>
@@ -105,10 +137,6 @@ webサイトメンテナンスについて</dd>
     <img src="img/tori.png" alt="とりの写真" class="photo" onclick="openPopup('popup2')">
     <img src="img/umi.png" alt="海の写真" class="photo" onclick="openPopup('popup3')">
 	<img src="img/coffee.png" alt="コーヒーの写真" class="photo" onclick="openPopup('popup4')">
-	<img src="img/5second.png" alt="通天閣内部" class="photo" onclick="openPopup('popup5')">
-	<img src="img/hukuoka.png" alt="太宰府天満宮" class="photo" onclick="openPopup('popup6')">
-	<img src="img/tonel.png" alt="高架下" class="photo" onclick="openPopup('popup7')">
-	<img src="img/taga.png" alt="古民家カフェ" class="photo" onclick="openPopup('popup8')">
 	<img src="img/moon.png" alt="月" class="photo" onclick="openPopup('popup9')">
 	<img src="img/hokora.png" alt="祠" class="photo" onclick="openPopup('popup10')">
 	<img src="img/99hama.png" alt="海" class="photo" onclick="openPopup('popup11')">
@@ -123,7 +151,7 @@ webサイトメンテナンスについて</dd>
         <div class="popup-image" style="background-image: url('img/nazo.png');"></div>
         <div class="popup-text">
           <h2>水門</h2>
-          <p>茨城<br>
+          <p>
 spring</p>
           <p class="text">
 </p>
@@ -140,7 +168,7 @@ spring</p>
         <div class="popup-image" style="background-image: url('img/tori.png');"></div>
         <div class="popup-text">
           <h2>鳥</h2>
-          <p>茨城<br>
+          <p>
 summer</p>
          <p class="text">カモかも？</p>
         </div>
@@ -156,7 +184,7 @@ summer</p>
         <div class="popup-image" style="background-image: url('img/umi.png');"></div>
         <div class="popup-text">
           <h2>海</h2>
-          <p>和歌山<br>
+          <p>
 summer</p>
           <p class="text"></p>
         </div>
@@ -172,75 +200,13 @@ summer</p>
         <div class="popup-image" style="background-image: url('img/coffee.png');"></div>
         <div class="popup-text">
           <h2>カフェラテ</h2>
-          <p>茨城<br>
+          <p>
 autumn</p>
          <p class="text"></p>
         </div>
       </div>
     </div>
-  </div>
- <!-- popup 5 -->
-  <div id="popup5" class="popup">
-    <div class="popup-content">
-      <span class="close" onclick="closePopup('popup5')">&times;</span>
-      <div class="popup-card">
-        <div class="popup-image" style="background-image: url('img/5second.png');"></div>
-        <div class="popup-text">
-          <h2>通天閣の展望台</h2>
-          <p>大阪<br>
-winter</p>
-          <p class="text"></p>
-        </div>
-      </div>
-    </div>
-  </div>
-		
-<!-- popup 6 -->
-  <div id="popup6" class="popup">
-    <div class="popup-content">
-      <span class="close" onclick="closePopup('popup6')">&times;</span>
-      <div class="popup-card">
-        <div class="popup-image" style="background-image: url('img/hukuoka.png');"></div>
-        <div class="popup-text">
-          <h2>太宰府天満宮</h2>
-          <p>福岡<br>
-winter</p>
-          <p class="text"></p>
-        </div>
-      </div>
-    </div>
-  </div>
-<!-- popup 7 -->
-  <div id="popup7" class="popup">
-    <div class="popup-content">
-      <span class="close" onclick="closePopup('popup7')">&times;</span>
-      <div class="popup-card">
-        <div class="popup-image" style="background-image: url('img/tonel.png');"></div>
-        <div class="popup-text">
-          <h2>高架下</h2>
-          <p>茨城<br>
-spring</p>
-          <p class="text">
-リミナルスペース感。</p>
-        </div>
-      </div>
-    </div>
-  </div>
-<!-- popup 8 -->
-  <div id="popup8" class="popup">
-    <div class="popup-content">
-      <span class="close" onclick="closePopup('popup8')">&times;</span>
-      <div class="popup-card">
-        <div class="popup-image" style="background-image: url('img/taga.png');"></div>
-        <div class="popup-text">
-          <h2>古民家カフェ</h2>
-          <p>茨城<br>summer</p>
-         <p class="text"></p>
-        </div>
-      </div>
-    </div>
-  </div>
-		
+  </div>	
 <!-- popup 9 -->
   <div id="popup9" class="popup">
     <div class="popup-content">
@@ -249,7 +215,7 @@ spring</p>
         <div class="popup-image" style="background-image: url('img/moon.png');"></div>
         <div class="popup-text">
           <h2>月</h2>
-          <p>茨城<br>autumn</p>
+          <p>autumn</p>
          <p class="text"></p>
         </div>
       </div>
@@ -263,7 +229,7 @@ spring</p>
         <div class="popup-image" style="background-image: url('img/hokora.png');"></div>
         <div class="popup-text">
           <h2>祠</h2>
-          <p>茨城<br>spring</p>
+          <p>spring</p>
          <p class="text"></p>
         </div>
       </div>
@@ -277,7 +243,7 @@ spring</p>
         <div class="popup-image" style="background-image: url('img/99hama.png');"></div>
         <div class="popup-text">
           <h2>九十九里浜</h2>
-          <p>千葉<br>spring</p>
+          <p>spring</p>
          <p class="text"></p>
         </div>
       </div>
@@ -292,7 +258,7 @@ spring</p>
         <div class="popup-image" style="background-image: url('img/inu.png');"></div>
         <div class="popup-text">
           <h2>雲</h2>
-          <p>茨城<br>summer</p>
+          <p>summer</p>
          <p class="text"></p>
         </div>
       </div>
@@ -302,7 +268,7 @@ spring</p>
 	<section>
 	<h3 id="file" class="yohaku">小冊子</h3>
 		<p>画像をクリックすると<br>
-			折本のpngファイルがダウンロードできます</p>
+			小冊子のpngファイルがダウンロードされます</p>
 		<p>作り方は<a href="info.html#orihon"><b>こちら🔗</b></a></p>
 		<a href="img/orihon8.png" download="orihon8.png"><img src="img/shiryou.png" alt="折本の表紙" class="shiryou"></a>
 	</section>
@@ -315,7 +281,10 @@ spring</p>
 		  </div>
 	</section>
 	</div>
-	
+	<div class="foot">
+		<a>このサイトはフィクションです。</a>
+	</div>
 	<script src="js/mordal.js"></script>
+  <script src="js/roading.js"></script>
 </body>
 </html>
