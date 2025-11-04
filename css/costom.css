@@ -361,7 +361,7 @@ p{
 
 .pure-g, 
 .pure-g * {
-  font-family: "Zen Maru Gothic", sans-serif !important;
+   font-family: "Zen Kaku Gothic New", sans-serif !important;
 }
 
 .pure-button{
@@ -477,7 +477,7 @@ p{
 .tategaki {
  writing-mode: vertical-rl;
   text-orientation: upright;
-  font-family: "Zen Maru Gothic", sans-serif;
+   font-family: "Zen Kaku Gothic New", sans-serif;
   font-size: 15px;
 	padding:4%;
 }
@@ -697,7 +697,7 @@ position: absolute;
 .popup-text {
   flex: 2;
   padding: 1em;
-  font-family: "Zen Maru Gothic", sans-serif;
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
 
 .close {
@@ -807,4 +807,24 @@ border-bottom-color: #3E6D78;
 	width: 480px;
 	height: auto;
 	position: relative;
+}
+#toTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffa87ab3;
+  color: white;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+#toTopBtn.show {
+  opacity: 1;
+  pointer-events: auto;
 }
