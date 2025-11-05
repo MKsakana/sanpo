@@ -358,6 +358,19 @@ p{
     margin-bottom: 30px;
 		font-size:17px;
 }
+dt{
+clear:both;
+color:#24A89F;
+float:left;
+font-weight:700;
+margin:0 0 20px 8%;
+width:12em}
+dd{
+border-bottom:1px solid;
+margin:0 17% 15px 25%;
+color:#235F5F;
+}
+
 
 .pure-g, 
 .pure-g * {
@@ -573,7 +586,7 @@ margin-left:0;
 
 .log{
 	margin-top: 20px;
-	margin-bottom: 40px;
+	margin-bottom:0px;
 	background-color:#E4F3F2;
 	padding: 10px;
 	padding-bottom: 70px;
@@ -594,17 +607,118 @@ margin-left:0;
 	margin-top:64px; 
 }
 
-dt{
-clear:both;
-color:#24A89F;
-float:left;
-font-weight:700;
-margin:0 0 20px 8%;
-width:12em}
-dd{
-border-bottom:1px solid;
-margin:0 17% 15px 25%;
-color:#235F5F;
+.gallery {
+  display: grid;
+  gap: 4px;
+  margin: 40px auto;
+  max-width: 1000px;
+  width: 75%; 
+  grid-template-columns: repeat(4, 1fr); /* 4列固定 */
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.tab{
+	font-size: 19px;
+}
+
+.news {
+	background-color:#E4F3F2;
+	color:currentColor;
+	padding-top: 70px;
+	padding-bottom: 60px;
+	
+}
+.news h3{
+color:#3E6D78;
+border-bottom-color: #3E6D78;
+}
+
+.log h3{
+color:#3E6D78;
+border-bottom-color: #3E6D78;
+}
+.sample{
+	width: 480px;
+	height: auto;
+	position: relative;
+}
+#toTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffa87ab3;
+  color: white;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+#toTopBtn.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.foot{
+	margin-top: 0;
+	text-align: right;
+	padding: 5px 10px 5px;
+	background: #2A505D;
+	color:#FFFFFF;
+	font-size:12px;
+	width: 100%;
+}
+
+.footup {
+	text-align: center;
+	margin: auto;
+	margin-bottom: 20px;
+	padding: 0;
+	width: 70%;
+}
+
+.pure-u-2-5 {
+	position: relative; 
+	display: inline-block; 
+}
+
+.foot-img {
+	display: block;
+	max-width: 400px;
+	width: 90%;
+	height: auto;
+	border-radius: 10px;
+	margin: 15% auto 10% auto; 
+	transition: filter 0.3s ease;
+}
+
+.pure-u-2-5:hover .foot-img {
+	filter: brightness(0.3); /* 暗くする */
+}
+
+.overlay-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 1.2em;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	pointer-events: none;
+	text-align: center;
+	width: 80%;
+}
+
+.pure-u-2-5:hover .overlay-text {
+	opacity: 1;
 }
 
 
@@ -685,9 +799,9 @@ position: absolute;
 }
 
   .popup-image {
-  background-size: cover;     /* ←全体を収める */
+  background-size: cover;     
   background-repeat: no-repeat;
-  background-position: center;  /* ←中央に寄せる */
+  background-position: center;  
   background-color: #9be8ff;    
   flex: 5;
   height: 100%;
@@ -714,30 +828,6 @@ position: absolute;
   to {opacity: 1; transform: scale(1);}
 }
 
-.gallery {
-  display: grid;
-  gap: 4px;
-  margin: 40px auto;
-  max-width: 1000px;
-  width: 75%; 
-  grid-template-columns: repeat(4, 1fr); /* 4列固定 */
-}
-
-.gallery img:hover {
-  transform: scale(1.05);
-}
-
-.tab{
-	font-size: 19px;
-}
-.foot{
-	text-align: right;
-	padding: 5px 10px 5px;
-	background: #2A505D;
-	color:#FFFFFF;
-	font-size:12px;
-}
-
 #loading {
   position: fixed;
   z-index: 9999;
@@ -747,14 +837,14 @@ position: absolute;
   top: 0;
   left: 0;
   display: flex;
-  flex-direction: column; /* ←縦方向に並べる */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   
 }
 
 #loading p {
-  margin-top: 20px; /* アニメーションとの間隔 */
+  margin-top: 20px;
   font-size: 18px;
   color: #fff;
   letter-spacing: 1px;
@@ -785,46 +875,4 @@ position: absolute;
 }
 #loading {
   transition: opacity 0.5s ease;
-}
-
-.news {
-	background-color:#E4F3F2;
-	color:currentColor;
-	padding-top: 70px;
-	padding-bottom: 60px;
-	
-}
-.news h3{
-color:#3E6D78;
-border-bottom-color: #3E6D78;
-}
-
-.log h3{
-color:#3E6D78;
-border-bottom-color: #3E6D78;
-}
-.sample{
-	width: 480px;
-	height: auto;
-	position: relative;
-}
-#toTopBtn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px 15px;
-  font-size: 18px;
-  border: none;
-  border-radius: 8px;
-  background-color: #ffa87ab3;
-  color: white;
-  cursor: pointer;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s;
-}
-
-#toTopBtn.show {
-  opacity: 1;
-  pointer-events: auto;
 }
