@@ -537,7 +537,7 @@ max-width: 140px;
   object-fit:contain; 
   display: block;     
 margin-left:0;
- max-height: 520px;
+ max-height: 460px;
 }
 
 
@@ -553,7 +553,7 @@ margin-left:0;
 
 .momozakiimg {
 	max-width: 200px;
-    max-height: 500px;
+    max-height: 430px;
     width: auto;          /* ←縦に合わせて横は自動調整 */
     object-fit: contain;  /* ←画像の縦横比を保つ */
     text-align: right; 
@@ -579,9 +579,9 @@ margin-left:0;
 .video{
 	max-width: 800px;
 	width:80%;
-	height: 350px;
+	height: 280px;
 	object-fit: cover;
-	 border-radius: 30px;
+	 border-radius: 10px;
 }
 
 .log{
@@ -684,7 +684,7 @@ border-bottom-color: #3E6D78;
 	width: 70%;
 }
 
-.pure-u-2-5 {
+.pure-u-md-2-5 {
 	position: relative; 
 	display: inline-block; 
 }
@@ -699,7 +699,7 @@ border-bottom-color: #3E6D78;
 	transition: filter 0.3s ease;
 }
 
-.pure-u-2-5:hover .foot-img {
+.pure-u-md-2-5:hover .foot-img {
 	filter: brightness(0.3); /* 暗くする */
 }
 
@@ -717,7 +717,7 @@ border-bottom-color: #3E6D78;
 	width: 80%;
 }
 
-.pure-u-2-5:hover .overlay-text {
+.pure-u-md-2-5:hover .overlay-text {
 	opacity: 1;
 }
 
@@ -736,6 +736,7 @@ position: absolute;
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   animation: blobMorph 8s ease-in-out infinite;
   z-index: 2;
+  opacity: 0.9; /* 半透明 */
 }
 .blob2{
 	 top: 60%;  /* 配置したい位置をここで調整 */
@@ -790,8 +791,8 @@ position: absolute;
   background: #fff;
   border-radius: 12px;
   max-width: 800px;
-  width: 70%;
-  height: 400px;
+  width: 80%;
+  height: 450px;
   display: flex;
   overflow: hidden;
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
@@ -803,13 +804,13 @@ position: absolute;
   background-repeat: no-repeat;
   background-position: center;  
   background-color: #9be8ff;    
-  flex: 5;
+  flex: 3;
   height: 100%;
 }
 
 
 .popup-text {
-  flex: 2;
+  flex: 1;
   padding: 1em;
   font-family: "Zen Kaku Gothic New", sans-serif;
 }
