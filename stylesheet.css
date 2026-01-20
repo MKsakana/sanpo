@@ -1,0 +1,300 @@
+/*ウェブサイト全体のスタイル設定*/
+ html, body {
+        height: 100%;/*ウェブサイトを端まで表示*/
+        margin: 0;/*ウェブサイトを端まで表示*/
+        padding: 0;/*ウェブサイトを端まで表示*/
+	    background-color: cadetblue;/*地図より後ろを青色に*/
+      }
+h4{
+	text-align: center;
+	font-size:17px;
+	padding-bottom: 13px;
+	border-bottom: 2px solid rgb(126, 151, 152);
+}
+
+
+/*タイトル文字スタイル*/
+.title{
+	font-family: "HG丸ｺﾞｼｯｸM-PRO","Yu Gothic","Noto Sans";
+    color:white; /*文字色*/
+    font-size: 24px;/*テキストサイズ*/
+    text-align: center;/*中央寄せ*/
+    padding-top: 25px; /*要素内の上側余白*/
+    padding-bottom:25px; /*要素内の下側余白*/
+    margin:0; /*要素外の余白をすべて０に*/
+
+/*タイトル背景色スタイル*/
+}
+.top{
+    background-color: cadetblue;/*背景の色を指定*/
+    width: 100%;/*幅を画面いっぱいに広げる*/
+    padding:0px;/*要素内の余白をすべて０に*/
+    margin:0px;/*要素外の余白をすべて０に*/
+    box-shadow: 3px black;/*ドロップシャドウ　調整中*/
+}
+
+/*ここから地図内スタイル*/
+	#map{
+		width: 100%;/*地図を横幅いっぱいに*/
+		height: 90%;/*地図を縦幅いっぱいに*/
+		margin-top:0px; /*要素外の上側余白を０に*/
+		padding-top:0px; /*要素内の上側余白を０に*/
+		z-index:0;/*地図のz座標を０に*/
+	}
+
+	/*以下ポップアップ吹き出しスタイル（書き換えたい部分だけleaflet.cssからコピペ）*/
+	/*吹き出しの中身*/	
+		.popup-content{
+			color:rgb(19, 76, 78);
+		}
+		.popup-content p{
+			font-size: 15px;
+			width: 90%;
+			min-width: 200px;
+		}
+		/*吹き出しの下地*/	
+		.leaflet-popup-content-wrapper {
+			padding: 1px;
+			text-align: left;
+			border-radius: 5px;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+			background-color:  cadetblue;
+			border-bottom: 3px solid rgb(19, 76, 78);
+			}
+		/*吹き出しの尖ってるところ*/	
+		.leaflet-popup-tip-container {
+			width: 40px;
+			height: 20px;
+			position: absolute;
+			left: 50%;
+			margin-top: -3.1px;
+			margin-left: -20px;
+			overflow: hidden;
+			pointer-events: none;
+			}
+		.leaflet-popup-tip {
+			width: 17px;
+			height: 17px;
+			padding: 1px;
+			margin: -10px auto 0;
+			pointer-events: auto;
+
+			-webkit-transform: rotate(45deg);
+			-moz-transform: rotate(45deg);
+				-ms-transform: rotate(45deg);
+					transform: rotate(45deg);
+			border-bottom: 3px solid rgb(19, 76, 78);
+			border-right: 3px solid rgb(19, 76, 78);
+		
+			}
+		/*吹き出し全体の色指定*/
+		.leaflet-popup-content-wrapper,
+		.leaflet-popup-tip {
+			background-color:rgb(255, 255, 255);
+			color: #333;
+			box-shadow: 0 0px 3px rgba(0,0,0,0.4);
+			}
+
+		/*吹き出し内の×ボタンを消去*/
+		.leaflet-container a.leaflet-popup-close-button {
+			display: none;
+			}
+		.leaflet-container a.leaflet-popup-close-button:hover,
+		.leaflet-container a.leaflet-popup-close-button:focus {
+			display: none;
+			}
+		.popup-table {
+			width: 100%;
+			border-collapse: collapse; 
+			margin-top: 10px;
+  			font-size: 0.9rem;
+		}
+
+		.popup-table th, 
+		.popup-table td {
+			padding: 8px;
+			border-bottom: 1px solid #eee; 
+			text-align: left;
+		}
+	
+		.popup-table th {
+			width: 100px; 
+			background-color: #f9f9f9;
+			color: #666;
+			font-weight: bold;
+			text-align: center;
+}
+		.popup-table td {
+			min-width: 80px;  
+		}
+
+		/*吹き出し内ゆきちゃん*/
+		.PinPng{
+			position: absolute;
+			bottom: -50px;
+			right: -50px;
+			width: 130px;
+			transform: rotate(10deg);
+		}
+		.judge{
+		font-weight: bold;
+		}
+
+	/*吹き出しスタイルここまで*/
+
+
+	/*ボタン用flexBox*/
+	.buttons{
+		position: fixed;
+		width:90%;
+		top:90px;
+		right:20px;
+		display: flex;
+		justify-content: flex-end;  
+		gap: 10px;
+		z-index:500;
+	}
+
+	/*位置情報取得＆検索ボタン*/
+	#locate-btn{
+		color:rgb(19, 76, 78);
+		background-color: rgb(255, 255, 255);
+		padding:20px;
+		border: 3px rgba(0,0,0,0.4);
+		border-radius: 5px;
+		border-bottom: 3px solid rgb(19, 76, 78);
+	}
+	#locate-btn:active{
+		background-color:rgb(19, 76, 78) ;
+		color:white;
+	}
+	#locate-btn.filtered {
+		background-color: cadetblue;
+		color:white
+	  }
+	.open{
+		color:rgb(19, 76, 78);
+		background-color: rgb(255, 255, 255);
+		padding:20px;
+		border: 3px rgba(0,0,0,0.4);
+		border-radius: 5px;
+		border-bottom: 3px solid rgb(19, 76, 78);
+	}
+
+/*地図内スタイルここまで*/
+
+
+/*ポップアップスタイルここから*/
+
+/* ポップアップ内のスクロール */
+.scroll{
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll
+}
+
+/* yuki1の大きさ指定 */
+.img-yuki-wrap {
+  width: 20%;
+  flex-shrink: 0;
+  margin-top: auto;
+}
+
+.yuki1 {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.open {
+	cursor: pointer;
+}
+#popup{
+	display: none;
+}
+.overlay {
+	display: none;
+}
+#popup:checked + .overlay {
+	display: block;
+	position: fixed;
+	width: 80%;
+	height: 80%;
+	top: 0;
+	left: 0;
+	z-index:1000;
+}
+.window {
+	width: 80%;
+	max-width: 80%;
+	height: 80%;
+	background-color: white;
+	border-radius: 8px; /* 四角の角を丸くする */
+	padding: 20px;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.close {
+	cursor: pointer;
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	font-size: 20px;
+}
+
+
+/* 質問　アコーディオンメニュー　ここから */
+details {
+  margin-bottom: 20px;
+  border: solid 1px cadetblue;
+}
+
+summary {
+  position: relative;
+  padding: 10px 35px 10px 20px;
+  list-style: none; /* ▶を非表示 */
+  cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::before {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  width: 14px;
+  height: 0;
+  border-top: solid 2px cadetblue;
+  transform: translateY(-50%);
+  content: "";
+}
+
+summary::after {
+  position: absolute;
+  top: 50%;
+  right: 26px;
+  width: 0;
+  height: 14px;
+  border-right: solid 2px cadetblue;
+  transform: translateY(-50%);
+  content: "";
+}
+
+details[open] summary::after {
+  opacity: 0;
+}
+
+.details_content {
+  padding: 0 20px 10px;
+  display: flex;  /* ゆきちゃんと文章を横並びにする */
+}
+/* 質問　アコーディオンメニュー　ここまで */
+
+/*ポップアップスタイルここまで*/
