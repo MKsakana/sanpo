@@ -1,86 +1,296 @@
 <!DOCTYPE html>
 <html lang="ja">
- <!--ヘッダー-->
- <head> 
-    <meta charset="utf-8">
-    <title>MitoPa｜MITOパーキングナビ</title>
-    <link rel="stylesheet" href="leaflet/leaflet.css">
-     <link rel="stylesheet" href="stylesheet.css">
+<head>
+<meta charset="utf-8">
+<title>散策広報課　さんぽ推進室</title>
+	
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css">
+<link href="css/costom.css" rel="stylesheet">
 </head>
-<!--ヘッダーここまで-->
-
-<!--本体-->
 <body>
- <!--タイトル-->
-    <header class="top">  
-        <h1 class="title">MitoPa　<small>|　Mitoパーキングナビ</small></h1>
-    </header>
- <!--タイトルここまで-->
+  <div id="loading">
+  <div class="dot-flower">
+    <div class="dot dot1"></div>
+    <div class="dot dot2"></div>
+    <div class="dot dot3"></div>
+    <div class="dot dot4"></div>
+    <div class="dot dot5"></div>
+    <div class="dot dot6"></div>
+  </div>
+  <p>Please wait...</p>
+</div>
+<button id="toTopBtn">◭</button>
+
+	<header class="pure-g header">
+  <div class="pure-u-1-4" >
+    <img src="img/rogo.png" alt="タイトルロゴ" class="rogo">
+  </div>
+	  <div class="pure-u-3-4 button-area">
+		<a href="info.html" class="pure-button info"><b>i</b></a>
+		</div>
+</header>
+<section class="hero">
+  <div class="bgimg">
+	  <div class="blob1"></div>
+	 <div class="blob1 blob2"></div>
+	  <div class="is-center">
+   		<img src="img/copy.png" alt="キャッチコピー" class="copy">
+  		</div>
+	</div>
+	
   
-    <div class="buttons">
-        <div id="locate-btn">現在地からさがす🔍</div><!--検索ボタン-->
-        <label class="open" for="popup">使い方</label>
-    </div>
+</section>
+<div class="is-center">
+	<nav class="pure-g nav-bar" style="font-weight: 600;">
+	  <div class="pure-u-1-4 menu"><a href="#about" class="tab">私たちについて</a></div>
+	  <div class="pure-u-1-4 menu"><a href="#staff" class="tab">スタッフ</a></div>
+	  <div class="pure-u-1-4 menu"><a href="#gallery" class="tab">取材記録</a>
+		</div>
+	  <div class="pure-u-1-4 menu"><a href="#apoint" class="tab">お問い合わせ</a></div>
+	</nav>
+	<div class="pure-g main">
+		
+			<img src="img/inu.png"　alt="空と雲" class="pure-u-1 pure-u-md-1-2 home-img pure-img-responsive">
+		<section class="about pure-u-1 pure-u-md-1-2" id="about">
+		  <h3 class="text" style="width: auto; padding: 15px">散策広報課　さんぽ推進室</h3>
+		  <p class="text">
+			たまに開いているお店、<br>
+			いつも見逃す小道、<br>
+			一期一会の雲と空。
+		  </p>
+		<p class="text">
+			無意味な回り道も、いつか意外な宝物になるかも。
+			</p>
+			<p class="text">
+			あらゆる人の運動習慣をよりよいものに。<br>
+			私たちはこれからも「さんぽ」をご提案していきます。
+			</p>
+		</section>
+		</div>
+	
+<section  class="icons pure-group">
+	<div class="pure-u-1 pure-u-lg-1-4">
+		<img src="img/3.png" class="icon">
+		<p class="icontext">リラックスして一歩ずつ</p>
+	</div>
+	<div class="pure-u-1 pure-u-lg-1-4">
+		<img src="img/2.png" class="icon">
+		<p class="icontext">ひとりでも、みんなでも</p>
+	</div>
+	<div class="pure-u-1 pure-u-lg-1-4">
+		<img src="img/1.png" class="icon">
+	<p class="icontext">行きたい場所を見つけよう</p>
+	</div>
+</section>
+	
+	<div class="yohaku"></div>
+	
+<section class="is-center pure-group news">
+<h3>最新情報</h3>
+	
+<dl class="yohaku pure-u-1 pure-u-lg-2-3">
+<dt>【イベント】<br>
+2025.10.31</dt>　<br>
+<dd>『仮装ウォーキングデイ』に出展しました</dd>
+<dt>【メディア】<br>
+2025.10.15</dt>
+<dd><br>
+雑誌「◆◆11月号」にコラムを掲載しています</dd>
+<dt>【お知らせ】<br>
+2025.9.22</dt>
+<dd><br>
+○○小学校に訪問させていただきました！</dd>
 
-    <div id="map"></div>  <!--地図-->   
-    
-    <!--使い方ボタン-->
-    <input type="checkbox" id="popup">
+</dl>
+</section>
+	
+	<section class="yohaku">
+	<h3 id="staff">スタッフ</h3>
+  <div class="prf">
+			<div class="momozaki">
+		<img src="img/momozaki.png" alt="百崎" class="momozakiimg"></div>
+		<div class="prftext2">
+			<h4>広報班 / 百崎</h4>
+				<p>
+				目玉焼きはしょうゆで！</p>
+			</div>
+		</div>
+		<div class="prf">
+			<div class="prftext">
+			<h4>取材班 / 持田</h4>
+				<p>
+				カフェインが効かない</p>
+			</div>
+			<div class="mochita">
+		<img src="img/mochita.png" alt="持田" class="mochitaimg"></div>
+		</div>
 
-    <!--ポップアップここから-->
-    <div class="overlay">
-        <div class="window">
-            <label class="close" for="popup">×</label>
-            <div class="scroll">
-                <h2>使い方</h2>
-                <p>水戸駅近辺のコインパーキングを探せます。<br>
-                ​このサイトは<a href="https://sugayalab.hum.ibaraki.ac.jp/">茨城大学情報デザイン菅谷ゼミ</a>生が開発したWebアプリです。​<br>
-                「目的地近くの駐車場を探したい！」「近くの駐車場はどこにあるのかな？」「初心者でも停めやすい駐車場はどこかな？」など様々なニーズに応えて検索することができます！
-                </p>
-                
-                <details>
-                    <summary><h3>Ｑ.ゆきちゃんって誰？</h3></summary>
-                    <div class="details_content">
-                        <div class="img-yuki-wrap">
-                            <img class="yuki1" src="image/yuki1.png" alt="ゆきちゃん">
-                        </div>
-                        <p>私は茨城大学人文社会科学部菅谷ゼミの公式キャラクターだよ！ <br>菅谷ゼミではゼミ生がプロジェクト制作を行っていて、私もそのプロジェクトで生み出されたよ！</p>
-                    </div>
-                </details>
-                <details>
-                    <summary><h3>Ｑ.菅谷ゼミって何？</h3></summary>
-                    <div class="details_content">
-                        <div class="img-yuki-wrap">
-                            <img class="yuki1" src="image/yuki1.png" alt="ゆきちゃん">
-                        </div>
-                        <p>菅谷ゼミは情報デザインを主分野とするゼミ生が、型にとらわれずに幅広い活動を行っているよ！</p></div>
-                </details>
-                <details>
-                    <summary><h3>Ｑ.なんでこのサイトを作ったの？このサイトの目的は？</h3></summary>
-                    <div class="details_content">
-                        <div class="img-yuki-wrap">
-                            <img class="yuki1" src="image/yuki1.png" alt="ゆきちゃん">   
-                        </div> 
-                        <p>地方創生を目指すプロジェクトの一環で、水戸市に訪れるドライバーが快適に駐車場を見つけることができるようにお手伝いしようと考えたんだ！</p></div>
-                </details>
-                <details>
-                    <summary><h3>Ｑ.このアプリは無料？</h3></summary>
-                    <div class="details_content"> 
-                        <div class="img-yuki-wrap">
-                            <img class="yuki1" src="image/yuki1.png" alt="ゆきちゃん">
-                        </div>
-                    <p>完全無料だよ♫</p></div>
-                </details>
-            </div>
+	</section>
+	<section class="log yohaku">
+		<h3 class="name"  id="gallery">取材記録</h3>
+	<div class="gallery">
+    <img src="img/nazo.png" alt="水門" class="photo" onclick="openPopup('popup1')">
+    <img src="img/cafe.png" alt="カフェ" class="photo" onclick="openPopup('popup2')">
+    <img src="img/umi.png" alt="海の写真" class="photo" onclick="openPopup('popup3')">
+  <img src="img/3p.png" alt="雪" class="photo" onclick="openPopup('popup11')">
+	<img src="img/home.png" alt="高架下" class="photo" onclick="openPopup('popup9')">
+	<img src="img/hokora.png" alt="祠" class="photo" onclick="openPopup('popup10')">
+  <img src="img/4p.png" alt="絵１" class="photo" onclick="openPopup('popup4')">
+  	<img src="img/tori.png" alt="鳥" class="photo" onclick="openPopup('popup12')">
+  </div>
+
+  <!-- popup 1 -->
+  <div id="popup1" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup1')">&times;</span>
+      <div class="popup-card">
+        <div class="popup-image" style="background-image: url('img/nazo.png');"></div>
+        <div class="popup-text">
+          <h2>水門</h2>
+          <p>
+spring</p>
+          <p class="text">
+</p>
         </div>
+      </div>
     </div>
-    <!--ポップアップここまで--> 
+  </div>
 
-<!--Js読み込み-->
- <script src="leaflet/leaflet.js"></script>
- <script src="js/test.js"></script>
-<!--Js読み込みここまで-->
+  <!-- popup 2 -->
+  <div id="popup2" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup2')">&times;</span>
+      <div class="popup-card">
+        <div class="popup-image" style="background-image: url('img/cafe.png');"></div>
+        <div class="popup-text">
+          <h2>カフェ</h2>
+          <p>
+spring</p>
+        
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- popup 3 -->
+  <div id="popup3" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup3')">&times;</span>
+      <div class="popup-card">
+        <div class="popup-image" style="background-image: url('img/umi.png');"></div>
+        <div class="popup-text">
+          <h2>海</h2>
+          <p>
+summer</p>
+          <p class="text"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+		
+ <!-- popup 4 -->
+  <div id="popup4" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup4')">&times;</span>
+      <div class="popup-card">
+        <div class="popup-image" style="background-image: url('img/4p.png');"></div>
+        <div class="popup-text">
+          <h2>神保町</h2>
+          <p>
+autumn</p>
+         <p class="text"></p>
+        </div>
+      </div>
+    </div>
+  </div>	
+<!-- popup 9 -->
+  <div id="popup9" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup9')">&times;</span>
+      <div class="popup-card">
+        <div class="popup-image" style="background-image: url('img/home.png');"></div>
+        <div class="popup-text">
+          <h2>高架下</h2>
+          <p>autumn</p>
+         <p class="text"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- popup 10-->
+  <div id="popup10" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup10')">&times;</span>
+      <div class="popup-card">
+        <div class="popup-image" style="background-image: url('img/hokora.png');"></div>
+        <div class="popup-text">
+          <h2>祠</h2>
+          <p>spring</p>
+         <p class="text"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- popup 11-->
+  <div id="popup11" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup11')">&times;</span>
+      <div class="popup-card">
+        <div class="popup-image" style="background-image: url('img/3p.png');"></div>
+        <div class="popup-text">
+          <h2>寒波</h2>
+          <p>winter</p>
+         <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+		
+<!-- popup 11-->
+  <div id="popup12" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup12')">&times;</span>
+      <div class="popup-card">
+        <div class="popup-image" style="background-image: url('img/tori.png');"></div>
+        <div class="popup-text">
+          <h2>カモ</h2>
+          <p>summer</p>
+         <p>多分カモ。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+	<section class="concept">
+	   <p class="tategaki pure-u-sm-1-5">
+		 ちょっとだけ　歩いてみよう。
+		</p>
+	  <div class="pure-u-1 pure-u-sm-4-5">
+		 <video width="300" height="180" autoplay muted loop class="video"> <source src="img/video.mp4" type="video/mp4"></video>
+		  </div>
+	</section>
+	</section>
+	</div>
+<div class="foot">
+	<h3 class="yohaku is-center" style="color: aliceblue; border-bottom-color: aliceblue" id="apoint">お問い合わせ</h3>
+	<div class="pure-group footup">
+		<div class="pure-u-md-2-5">
+			<img src="img/tk.png" class="foot-img">
+			<div class="overlay-text">随時受けつけています☎</div>
+		</div>
+		<div class="pure-u-md-2-5">
+			<img src="img/sai.png" class="foot-img">
+			<div class="overlay-text">募集停止中</div>
+		</div>
+	</div>
+	<a>このサイトはフィクションです。</a>
+</div>
+	<script src="js/mordal.js"></script>
+  <script src="js/roading.js"></script>
+   <script src="js/totop.js"></script>
 </body>
-<!--本体ここまで-->
 </html>
