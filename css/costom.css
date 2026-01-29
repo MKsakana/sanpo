@@ -82,7 +82,7 @@ label {
 
 .pure-form input[type] {
     border: 2px solid #ddd;
-    box-shadow: none;
+    box-shadow: 0 0 8px #666;
     font-size: 100%;
     width: 100%;
     margin-bottom: 1em;
@@ -328,7 +328,7 @@ a:active {
 
 h2{
     color: #747887;
-    font-size: 22px;
+    font-size: 28px;
     font-weight: 600;
     margin-top: 20px;
     margin-right: auto;
@@ -341,22 +341,27 @@ h2{
 h3{
 	margin: 0 auto;
     color: #747887;
-    font-size: 22px;
+    font-size: 24px;
     border-bottom: thin solid darkgray;
 	padding-bottom: 20px;
 	width: 200px;
 }
 h4{
 	color:#38607B;
-	font-size: 20px;
+	font-size: 22px;
 	padding:0 5px 0 5px;
+}
+
+h5{
+  font-size: 18px;
+
 }
 p{
     margin-top: 30px;
     margin-right: 0px;
     margin-left: 0px;
     margin-bottom: 30px;
-		font-size:17px;
+		font-size:18px;
 }
 dt{
 clear:both;
@@ -364,7 +369,8 @@ color:#24A89F;
 float:left;
 font-weight:700;
 margin:0 0 20px 8%;
-width:12em}
+width:12em
+}
 dd{
 border-bottom:1px solid;
 margin:0 17% 15px 25%;
@@ -532,12 +538,13 @@ color:#235F5F;
 
 
 .mochitaimg {
-max-width: 140px;
+max-width: 200px;
   width: auto;        
   object-fit:contain; 
   display: block;     
-margin-left:0;
- max-height: 460px;
+margin-left:40px;
+ max-height: 530px;
+ margin-top: 35px;
 }
 
 
@@ -547,17 +554,18 @@ margin-left:0;
   justify-content: flex-end; 
   align-items: center;  /* ←縦方向を中央揃え */
  object-fit: contain;
-	display: flex
+	display: flex;
 }
 
 
 .momozakiimg {
-	max-width: 200px;
-    max-height: 430px;
-    width: auto;          /* ←縦に合わせて横は自動調整 */
-    object-fit: contain;  /* ←画像の縦横比を保つ */
-    text-align: right; 
-
+	max-width: 300px;
+  max-height: 500px;
+  width: auto;          /* ←縦に合わせて横は自動調整 */
+  object-fit: contain;  /* ←画像の縦横比を保つ */
+  text-align: right; 
+  margin-top: 45px;
+  margin-right:40px;
 }
 
 .prftext2 {
@@ -570,6 +578,76 @@ margin-left:0;
     margin-bottom: auto;
 }
 
+/*スタッフページ用CSS*/
+.staff_card{
+    position: relative;
+    margin: auto;
+    margin-top: 40px;
+    width: 80%;
+    max-width: 600px;
+    height: 600px;
+    border-radius: 30px;
+    box-shadow: 0 4px 4px #666;
+    border:1px #111;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 260ms ease, transform 260ms ease;
+}
+
+.staff_card--fade-out{
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+.staff_card--fade-in{
+    opacity: 1;
+    transform: translateY(0);
+}
+.select_card{
+    display: flex;
+    margin: auto;
+    margin-top: 40px;
+    width: 70%;
+    max-width: 450px;
+}
+.mini_card{
+    margin: auto;
+    margin-top: 40px;
+    width: 40%;
+    box-shadow: 0 4px 4px #666;
+    border-radius: 30px;
+	cursor: pointer;
+	user-select: none;
+	text-align: center;
+	padding: 12px 10px;
+	transition: transform 120ms ease, background-color 120ms ease, box-shadow 120ms ease;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+
+.mini_card:hover{
+	transform: translateY(-1px);
+}
+
+.mini_card.is-active{
+	background-color: #E4F3F2;
+	box-shadow: 0 6px 8px #666;
+}
+
+.mini_face{
+	width: 90px;
+	height: 90px;
+	border-radius: 999px;
+	object-fit: cover;
+	flex: 0 0 auto;
+  margin:10px;
+}
+
+.mini_name{
+	font-weight: 600;
+  margin: 10px;
+}
 
 
 .name{
@@ -579,7 +657,7 @@ margin-left:0;
 .video{
 	max-width: 800px;
 	width:80%;
-	height: 280px;
+	height: 480px;
 	object-fit: cover;
 	 border-radius: 10px;
 }
@@ -629,7 +707,7 @@ margin-left:0;
 	color:currentColor;
 	padding-top: 70px;
 	padding-bottom: 60px;
-	
+	font-size: 16px;
 }
 .news h3{
 color:#3E6D78;
@@ -785,6 +863,7 @@ position: absolute;
   justify-content: center;
   align-items: center;
   height: 100%;
+  position: relative;
 }
 
 .popup-card {
@@ -822,6 +901,36 @@ position: absolute;
   color: white;
   font-size: 36px;
   cursor: pointer;
+}
+
+.popup-nav{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 0;
+  background: rgba(255, 255, 255, 0.9);
+  color: #34495e;
+  font-size: 28px;
+  line-height: 1;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.popup-nav:hover{
+  background: rgba(255, 255, 255, 1);
+}
+
+.popup-nav-prev{
+  left: 16px;
+}
+
+.popup-nav-next{
+  right: 16px;
 }
 
 @keyframes fadeIn {
